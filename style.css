@@ -1,0 +1,140 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial';
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    padding-bottom: 10px
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead th {
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+    background:#1F2833;
+    color: #66FCF1;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive Table Styling */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Button Styling */
+button {
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Input & Search Bar Styling */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Tooltip for Buttons */
+button[title]::after {
+    content: attr(title);
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+button[title]:hover::after {
+    display: block;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Spinner */
+#spinner {
+    display: none;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Section collapse animation */
+.collapse {
+    transition: height 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+}
